@@ -1,0 +1,80 @@
+:root{
+    --black: #000;
+    --green: #498e46;
+    --green-hover: #58ab55;
+    --green-active: #2c582b;
+    --red: #ff0000;
+}
+
+/* NAVIGATION */
+header{
+    height: auto;
+}
+nav{
+    color: white;
+    background-color: var(--green);
+    padding: 1rem;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    position: absolute;
+}
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    position: relative;
+    padding: 10px 20px;
+    width: 100%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    font-size: large;
+}
+#controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#randomDog{
+    max-width: 100%;
+    max-height: 5in;
+    height: auto;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 50%;
+    
+}
+#hund{
+    position: relative;
+    height: 5in;
+    max-height: 5in;
+    align-items: center;
+    /* CSS */
+    background-color: var(--black);
+    overflow: hidden;
+}
+
+/* EFFECTS */
+button:hover{
+    background-color: var(--green-hover);
+}
+button:active{
+    background-color: var(--green-active);
+}
+.loading{
+    color: var(--green);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+#fault{
+    color: var(--red);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}

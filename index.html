@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="ASSETS/CSS/main.css">
+    <link rel="manifest" href="ASSETS/JS/manifest.json">
+    <script src="ASSETS/JS/java.js" defer></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("service-worker.js");
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0078d4">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- <img src="ASSETS/IMAGES/dog1.jpg" alt="Dog" id="dog"> -->
+        <nav>
+            <h1>Dog.html</h1>
+        </nav>
+    </header>
+    <section id="hund">
+
+        <p class="loading" hidden>Initializing image...</p>
+        <p id="fault" hidden>Fault! Failed to pair.</p>
+
+        <img src="ASSETS/IMAGES/test.gif" alt="Random Dog" id="randomDog">
+    </section>
+    <div id="controls">
+        <button id="getDogButton" onclick="getRandomDog()">Get Random Dog</button>
+        <h2>Bottom note</h2>
+    </div>
+</body>
+</html>
